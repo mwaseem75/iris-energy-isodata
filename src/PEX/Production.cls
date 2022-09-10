@@ -30,17 +30,10 @@ XData ProductionDefinition
     <Setting Target="Adapter" Name="From"></Setting>
     <Setting Target="Adapter" Name="Credentials"></Setting>
   </Item>
-  <Item Name="Python.RedditService" Category="" ClassName="Python.RedditService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="Python.IsodataService" Category="" ClassName="Python.IsodataService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
-  <Item Name="Python.RedditServiceWithIrisAdapter" Category="" ClassName="Python.RedditServiceWithIrisAdapter" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Adapter" Name="Feed">/new/</Setting>
-    <Setting Target="Adapter" Name="Limit">4</Setting>
-    <Setting Target="Adapter" Name="SSLConfig">default</Setting>
-  </Item>
-  <Item Name="Python.RedditServiceWithPexAdapter" Category="" ClassName="Python.RedditServiceWithPexAdapter" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Adapter" Name="%settings">limit=3</Setting>
-  </Item>
+  
   <Item Name="Python.FilterPostRoutingRule" Category="" ClassName="Python.FilterPostRoutingRule" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
 </Production>

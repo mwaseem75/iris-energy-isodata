@@ -4,14 +4,14 @@ import iris
 
 import json
 import requests
-import isodata
+#import isodata
 from message import PostMessage
 from obj import PostClass
 
-class RedditService(BusinessService):
+class IsodataService(BusinessService):
     """
     This service use an Ens.InboundAdapter to, on_process_input every 5
-    seconds, use requests to fetch self.limit posts as data from the reddit
+    seconds, use requests to fetch self.limit posts as data from the isodata
     API before calling the FilterPostRoutingRule process.
     """
     def get_adapter_type():
@@ -53,14 +53,14 @@ class RedditService(BusinessService):
             """)
             updateLast = 0
 
-            iso = isodata.get_iso('caiso')
-            df = caiso.get_demand_today()
-            dataa = df.to_json(orient="split")
+            #iso = isodata.get_iso('caiso')
+            #df = iso.get_demand_today()
+            #dataa = df.to_json(orient="split")
 
             for key, value in enumerate(data['data']['children']):
                               
                 post = PostClass.from_dict(value['data'])
-                post.original_json = dataa
+                post.original_json = "Original JSON"
                 post.title="Energy demand throughout the current day"
                 post.selftext="Cat"
                 post.url="https://github.com/kmax12/isodata"
@@ -80,51 +80,3 @@ class RedditService(BusinessService):
             raise err
 
         return None
-
-
-class RedditServiceWithIrisAdapter(BusinessService):
-    """
-    This service use our objectscript dc.Reddit.InboundAdapter to receive post
-    from reddit and call the FilterPostRoutingRule process.
-    """
-    def get_adapter_type():
-        """
-        Name of the registred Adapter
-        """
-        return "dc.Reddit.InboundAdapter"
-
-    def on_process_input(self, message_input):
-        msg = iris.cls("dc.Demo.PostMessage")._New()
-        msg.Post = message_input
-        return self.send_request_sync(self.target,msg)
-
-    def on_init(self):
-        
-        if not hasattr(self,'target'):
-            self.target = "Python.FilterPostRoutingRule"
-        
-        return
-
-class RedditServiceWithPexAdapter(BusinessService):
-    """
-    This service use our python Python.RedditInboundAdapter to receive post
-    from reddit and call the FilterPostRoutingRule process.
-    """
-    def get_adapter_type():
-        """
-        Name of the registred Adapter
-        """
-        return "Python.RedditInboundAdapter"
-
-    def on_process_input(self, message_input):
-        self._wait_for_next_call_interval = True
-        msg = iris.cls("dc.Demo.PostMessage")._New()
-        msg.Post = message_input
-        return self.send_request_sync(self.target,msg)
-
-    def on_init(self):
-        
-        if not hasattr(self,'target'):
-            self.target = "Python.FilterPostRoutingRule"
-        
-        return
