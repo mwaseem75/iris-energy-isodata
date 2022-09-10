@@ -4,7 +4,7 @@ import iris
 
 import json
 import requests
-#import isodata
+import isodata
 from message import PostMessage
 from obj import PostClass
 
@@ -53,14 +53,14 @@ class IsodataService(BusinessService):
             """)
             updateLast = 0
 
-            #iso = isodata.get_iso('caiso')
-            #df = iso.get_demand_today()
-            #dataa = df.to_json(orient="split")
+            iso = isodata.get_iso('caiso')
+            caiso = iso()
+            dataa = caiso.get_demand_today().to_json()
 
             for key, value in enumerate(data['data']['children']):
                               
                 post = PostClass.from_dict(value['data'])
-                post.original_json = "Original JSON"
+                post.original_json = dataa
                 post.title="Energy demand throughout the current day"
                 post.selftext="Cat"
                 post.url="https://github.com/kmax12/isodata"
