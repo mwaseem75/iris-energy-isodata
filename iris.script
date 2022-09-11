@@ -9,10 +9,7 @@
  //Register Python code
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","IsodataService","/irisdev/app/src/python/demo/isodata/",1,"Python.IsodataService")
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bp","FilterPostRoutingRule","/irisdev/app/src/python/demo/isodata/",1,"Python.FilterPostRoutingRule")
- zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","FileOperationWithIrisAdapter","/irisdev/app/src/python/demo/isodata/",1,"Python.FileOperationWithIrisAdapter")
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","FileOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.FileOperation")
- zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","EmailOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.EmailOperation")
- zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","EmailOperationWithIrisAdapter","/irisdev/app/src/python/demo/isodata/",1,"Python.EmailOperationWithIrisAdapter")
 
  set ^EnsPortal.Settings("SuperUser","LastProduction")	= "PEX.Production"
  
