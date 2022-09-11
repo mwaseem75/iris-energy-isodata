@@ -7,7 +7,10 @@
  do $System.OBJ.LoadDir("/irisdev/app/src/PEX","ck","*.cls",1)
 
  //Register Python code
- zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","IsodataService","/irisdev/app/src/python/demo/isodata/",1,"Python.IsodataService")
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","FuelMixService","/irisdev/app/src/python/demo/isodata/",1,"Python.FuelMixService") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","DemandService","/irisdev/app/src/python/demo/isodata/",1,"Python.DemandService") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","SupplyService","/irisdev/app/src/python/demo/isodata/",1,"Python.SupplyService") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","ForecastService","/irisdev/app/src/python/demo/isodata/",1,"Python.ForecastService") 
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bp","FilterPostRoutingRule","/irisdev/app/src/python/demo/isodata/",1,"Python.FilterPostRoutingRule")
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","FileOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.FileOperation")
 
