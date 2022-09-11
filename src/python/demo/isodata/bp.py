@@ -21,19 +21,16 @@ class FilterPostRoutingRule(BusinessProcess):
 
     def iris_to_python(self, request:'iris.dc.Demo.PostMessage'):
 
-        request = PostMessage(post=PostClass(title=request.Post.Title, 
-                                             selftext=request.Post.Selftext,
-                                             author=request.Post.Author, 
-                                             url=request.Post.Url,
+        request = PostMessage(post=PostClass(title=request.Post.Title,                                             
                                              created_utc=request.Post.CreatedUTC,
                                              original_json=request.Post.OriginalJSON))
         return self.on_python_message(request)
 
     def on_python_message(self, request: PostMessage):
-        if 'dog'.upper() in request.post.selftext.upper():
+        if 'dog'.upper() in request.post.title.upper():
             request.to_email_address = 'dog@company.com'
             request.found = 'Dog'
-        if 'cat'.upper() in request.post.selftext.upper():
+        if 'cat'.upper() in request.post.title.upper():
             request.to_email_address = 'cat@company.com'
             request.found = 'Cat'
 
