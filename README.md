@@ -7,8 +7,22 @@ Currently supports fuel mix, load, supply, load forecast, and LMP pricing data f
 This proof of concept aims to show how the **iris interoperability framework** can be use with **embedded python**.
 
 
+## Features
+* Get Fuel Mix
+* Get Today Forecast, Demand and supply
+* Get Latest Demand and Supply
+* Get Historical Demand and supply
 
-Medthods Availability
+## List of Independent systems operators(ISOs) 
+* California ISO (caiso)
+* Electric Reliability Council of Texas (ercot)
+* New York ISO (nyiso)
+* Southwest Power Pool (spp)
+* PJM (pjm)
+* Midcontinent ISO (miso)
+* ISO New England (isone)
+
+## Medthods Availability
 ![image](https://user-images.githubusercontent.com/18219467/189523605-52527d0d-6f8e-433e-9506-f46a01a26138.png)
 
 
