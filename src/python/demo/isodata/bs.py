@@ -18,6 +18,7 @@ class IsodataService(BusinessService):
         """
         Name of the registred Adapter
         """
+        
         return "Ens.InboundAdapter"
 
     def on_init(self):
@@ -29,7 +30,7 @@ class IsodataService(BusinessService):
             raise TypeError('no limit field')
 
         if not hasattr(self,'target'):
-            self.target = "Python.FilterPostRoutingRule"
+            self.target = "Isodata.FilterRoutingRule"
         
         self.last_post_name = ""
         

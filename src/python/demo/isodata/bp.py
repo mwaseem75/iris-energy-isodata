@@ -15,7 +15,7 @@ class FilterPostRoutingRule(BusinessProcess):
     def on_init(self):
         
         if not hasattr(self,'target'):
-            self.target = "Python.FileOperation"
+            self.target = "Isodata.CaliforniaOperation"
         
         return
 
