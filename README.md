@@ -2,11 +2,10 @@
 
 iris-energy-isodata app access energy data from the major Independent System Operators (ISOs) in the United States to Ensure sustainable consumption and production patterns (SDG's 16)
 
-Currently supports fuel mix, load, supply, load forecast, and LMP pricing data for CAISO, SPP, ISONE, MISO, Ercot, NYISO, and PJM. See full availability below.
 
-Application is using **iris interoperability framework** along with **embedded python**.
+Application is using [**PEX**](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=EPEX_INTRO) **iris interoperability framework** along with **embedded python**. 
 
-## Get total production, demand and supply of below Independent systems operators(ISOs) 
+## Get production, demand and supply of below Independent systems operators(ISOs) 
 * California ISO (caiso)
 * Electric Reliability Council of Texas (ercot)
 * New York ISO (nyiso)
@@ -15,8 +14,19 @@ Application is using **iris interoperability framework** along with **embedded p
 * Midcontinent ISO (miso)
 * ISO New England (isone)
 
-## Medthods Availability
-![image](https://user-images.githubusercontent.com/18219467/189523605-52527d0d-6f8e-433e-9506-f46a01a26138.png)
+## Get today total production of following energies
+* Natural Gas 
+* Solar       
+* Imports     
+* Wind        
+* Large Hydro 
+* Nuclear     
+* Batteries   
+* Geothermal  
+* Biomass     
+* Small hydro 
+* Biogas      
+* Coal       
 
 ## Repo Contents   
 * Dockerfile, docker-compose.yml, and Installer.cls to create container
@@ -30,15 +40,13 @@ Application is using **iris interoperability framework** along with **embedded p
 
 ## To Run on Windows:  
 ```
-	git clone https://github.com/mwaseem75/Data_APP_Security.git  
-	cd Data_APP_Security  
+	git clone https://github.com/mwaseem75/iris-energy-isodata.git  
 	docker-compose up -d  
 ```
 ## To Run on macOS:  
 
 ```
-	git clone https://github.com/mwaseem75/Data_APP_Security.git 
-	cd Data_APP_Security 
+	git clone https://github.com/mwaseem75/iris-energy-isodata.git
 	docker-compose up -d  
 ```
 Log in with credentials: SuperUser | SYS
