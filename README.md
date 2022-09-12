@@ -53,7 +53,12 @@ Log in with credentials: SuperUser | SYS
 ## Getting Started 
 Navigate to production
 http://localhost:52795/csp/irisapp/EnsPortal.ProductionConfig.zen?PRODUCTION=PEX.Production
+
 Start the production
+![image](https://user-images.githubusercontent.com/18219467/189573043-49dd6f92-dc29-4bc8-9298-f9fd34359c83.png)
+
+Visual Trace
+![image](https://user-images.githubusercontent.com/18219467/189573214-36d3f351-f688-4be1-8b12-cbde9b18fec4.png)
 
 Business Services
 Get Today Fuel consumption, Demand and supply and pass to process
@@ -63,6 +68,9 @@ Process based on the title
 
 Business Operation
 Write message to the file
+
+Message
+![image](https://user-images.githubusercontent.com/18219467/189573344-f32fbb6c-73bf-4e5f-8453-8effc396f556.png)
 
 
 
