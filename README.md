@@ -51,7 +51,18 @@ Application is using **iris interoperability framework** along with **embedded p
 Log in with credentials: SuperUser | SYS
 
 ## Getting Started 
+Navigate to production
+http://localhost:52795/csp/irisapp/EnsPortal.ProductionConfig.zen?PRODUCTION=PEX.Production
+Start the production
 
+Business Services
+Get Today Fuel consumption, Demand and supply and pass to process
+
+Business Process
+Process based on the title
+
+Business Operation
+Write message to the file
 
 
 
