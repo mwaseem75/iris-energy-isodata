@@ -20,7 +20,10 @@ class FileOperation(BusinessOperation):
 
     def on_message(self, request):
         
-        ts = title = text = ""
+        ts = title = fuel_mix =  demand = supply = ""
+        fuel_mix = request.post.fuel_mix
+        demand = request.post.demand
+        supply = request.post.supply
 
         if (request.post is not None):
             title = request.post.title
@@ -29,9 +32,13 @@ class FileOperation(BusinessOperation):
         line = ts+" : "+title
         filename = title+".txt"
 
-
         self.put_line(filename, line)
         self.put_line(filename, "")
+        self.put_line(filename, fuel_mix)
+        self.put_line(filename, "")
+        self.put_line(filename, demand)
+        self.put_line(filename, "")
+        self.put_line(filename, supply)
         self.put_line(filename, " * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *")
 
         return 
