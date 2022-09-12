@@ -7,19 +7,31 @@ XData ProductionDefinition
   <Description></Description>
   <ActorPoolSize>2</ActorPoolSize>
   
-  <Item Name="Isodata.FuelMixService" Category="" ClassName="Python.FuelMixService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="Isodata.CaliforniaService" Category="" ClassName="Python.CaliforniaService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
   
-  <Item Name="Isodata.DemandService" Category="" ClassName="Python.DemandService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="Isodata.TexasService" Category="" ClassName="Python.TexasService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
 
-  <Item Name="Isodata.SupplyService" Category="" ClassName="Python.SupplyService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="Isodata.NewYorkService" Category="" ClassName="Python.NewYorkService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
 
-  <Item Name="Isodata.ForecastService" Category="" ClassName="Python.ForecastService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="Isodata.SouthWestService" Category="" ClassName="Python.SouthWestService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Host" Name="%settings">limit=10</Setting>
+  </Item>
+
+  <Item Name="Isodata.PjmService" Category="" ClassName="Python.PjmService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Host" Name="%settings">limit=10</Setting>
+  </Item>
+
+  <Item Name="Isodata.MidcontinentService" Category="" ClassName="Python.MidcontinentService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Host" Name="%settings">limit=10</Setting>
+  </Item>
+
+  <Item Name="Isodata.Isone" Category="" ClassName="Python.IsoneService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
 

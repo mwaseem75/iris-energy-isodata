@@ -7,11 +7,14 @@
  do $System.OBJ.LoadDir("/irisdev/app/src/PEX","ck","*.cls",1)
 
  //Register Python code
- zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","FuelMixService","/irisdev/app/src/python/demo/isodata/",1,"Python.FuelMixService") 
- zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","DemandService","/irisdev/app/src/python/demo/isodata/",1,"Python.DemandService") 
- zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","SupplyService","/irisdev/app/src/python/demo/isodata/",1,"Python.SupplyService") 
- zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","ForecastService","/irisdev/app/src/python/demo/isodata/",1,"Python.ForecastService") 
- zw ##class(Grongier.PEX.Utils).RegisterComponent("bp","FilterPostRoutingRule","/irisdev/app/src/python/demo/isodata/",1,"Python.FilterPostRoutingRule")
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","CaliforniaService","/irisdev/app/src/python/demo/isodata/",1,"Python.CaliforniaService") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","TexasService","/irisdev/app/src/python/demo/isodata/",1,"Python.TexasService") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","NewYorkService","/irisdev/app/src/python/demo/isodata/",1,"Python.NewYorkService") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","SouthWestService","/irisdev/app/src/python/demo/isodata/",1,"Python.SouthWestService") 
+  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","PjmService","/irisdev/app/src/python/demo/isodata/",1,"Python.PjmService") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","MidcontinentService","/irisdev/app/src/python/demo/isodata/",1,"Python.MidcontinentService") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","IsoneService","/irisdev/app/src/python/demo/isodata/",1,"Python.IsoneService") 
+  zw ##class(Grongier.PEX.Utils).RegisterComponent("bp","FilterPostRoutingRule","/irisdev/app/src/python/demo/isodata/",1,"Python.FilterPostRoutingRule")
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","FileOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.FileOperation")
 
  set ^EnsPortal.Settings("SuperUser","LastProduction")	= "PEX.Production"
