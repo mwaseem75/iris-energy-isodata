@@ -150,7 +150,7 @@ class TexasService(BusinessService):
                               
                 post = PostClass.from_dict(value['data'])
                 post.fuel_mix = getdata
-                post.title="caiso"
+                post.title="ercot"
                 post.demand = demand+" NW"
                 post.supply = supply+" NW"
 
@@ -231,7 +231,7 @@ class NewYorkService(BusinessService):
                               
                 post = PostClass.from_dict(value['data'])
                 post.fuel_mix = getdata
-                post.title="caiso"
+                post.title="nyiso"
                 post.demand = demand+" NW"
                 post.supply = supply+" NW"
 
@@ -312,7 +312,7 @@ class SouthWestService(BusinessService):
                               
                 post = PostClass.from_dict(value['data'])
                 post.fuel_mix = getdata
-                post.title="caiso"
+                post.title="spp"
                 post.demand = demand+" NW"
                 post.supply = supply+" NW"
 
@@ -393,7 +393,7 @@ class PjmService(BusinessService):
                               
                 post = PostClass.from_dict(value['data'])
                 post.fuel_mix = getdata
-                post.title="caiso"
+                post.title="pjm"
                 post.demand = demand+" NW"
                 post.supply = supply+" NW"
 
@@ -474,7 +474,7 @@ class MidcontinentService(BusinessService):
                               
                 post = PostClass.from_dict(value['data'])
                 post.fuel_mix = getdata
-                post.title="caiso"
+                post.title="miso"
                 post.demand = demand+" NW"
                 post.supply = supply+" NW"
 
@@ -555,7 +555,7 @@ class IsoneService(BusinessService):
                               
                 post = PostClass.from_dict(value['data'])
                 post.fuel_mix = getdata
-                post.title="caiso"
+                post.title="isone"
                 post.demand = demand+" NW"
                 post.supply = supply+" NW"
 
