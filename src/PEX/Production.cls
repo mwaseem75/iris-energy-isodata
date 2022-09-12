@@ -11,15 +11,15 @@ XData ProductionDefinition
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
   
-  <Item Name="Isodata.DemandService" Category="" ClassName="Python.DemandService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="Isodata.DemandService" Category="" ClassName="Python.DemandService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
 
-  <Item Name="Isodata.SupplyService" Category="" ClassName="Python.SupplyService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="Isodata.SupplyService" Category="" ClassName="Python.SupplyService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
 
-  <Item Name="Isodata.ForecastService" Category="" ClassName="Python.ForecastService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="Isodata.ForecastService" Category="" ClassName="Python.ForecastService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
 

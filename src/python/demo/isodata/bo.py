@@ -27,7 +27,7 @@ class FileOperation(BusinessOperation):
             ts = datetime.datetime.fromtimestamp(request.post.created_utc).__str__()
 
         line = ts+" : "+title
-        filename = request.found+".txt"
+        filename = title+".txt"
 
 
         self.put_line(filename, line)

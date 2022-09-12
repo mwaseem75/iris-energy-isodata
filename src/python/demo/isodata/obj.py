@@ -6,4 +6,6 @@ from dataclasses_json import LetterCase, dataclass_json, config
 class PostClass:
     title: str
     created_utc: float = field(metadata=config(field_name="created_utc"))
-    original_json: str = None
+    fuel_mix: str = None
+    demand: str = None
+    supply: str = None
