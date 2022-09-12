@@ -37,6 +37,11 @@ Method GetModule() As %String
 	Return ..%module
 }
 
+Method SendRequestAsync(target,request,description) As %String
+{
+	Return ""
+}
+
 Method OnInit() As %Status
 {
 	set tSC = $$$OK
