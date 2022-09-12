@@ -57,6 +57,10 @@ http://localhost:52795/csp/irisapp/EnsPortal.ProductionConfig.zen?PRODUCTION=PEX
 
 Start the production
 ![image](https://user-images.githubusercontent.com/18219467/189573043-49dd6f92-dc29-4bc8-9298-f9fd34359c83.png)
+Production contains 7 Business Services, 1 Business Process and 7 Business Operations.
+
+Business Service fetch data from ISOdata and pass to business process which is sending message to business process based on the title. 
+
 
 Visual Trace
 ![image](https://user-images.githubusercontent.com/18219467/189573214-36d3f351-f688-4be1-8b12-cbde9b18fec4.png)
