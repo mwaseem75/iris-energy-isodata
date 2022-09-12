@@ -62,6 +62,7 @@ Visual Trace
 ![image](https://user-images.githubusercontent.com/18219467/189573214-36d3f351-f688-4be1-8b12-cbde9b18fec4.png)
 
 Message
+The following message passed to operation contains today total production of Natural Gas, Solar, Imports, Wind, Large Hydro, Nuclear, Batteries, Geothermal, Biomass, Small hydro, Biogas and Coal energies  
 ![image](https://user-images.githubusercontent.com/18219467/189573344-f32fbb6c-73bf-4e5f-8453-8effc396f556.png)
 
 
