@@ -6,14 +6,7 @@ Currently supports fuel mix, load, supply, load forecast, and LMP pricing data f
 
 Application is using **iris interoperability framework** along with **embedded python**.
 
-
-## Features
-* Get Fuel Mix
-* Get Today Forecast, Demand and supply
-* Get Latest Demand and Supply
-* Get Historical Demand and supply
-
-## List of Independent systems operators(ISOs) 
+## Get total production, demand and supply of below Independent systems operators(ISOs) 
 * California ISO (caiso)
 * Electric Reliability Council of Texas (ercot)
 * New York ISO (nyiso)
