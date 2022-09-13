@@ -11,11 +11,17 @@
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","TexasService","/irisdev/app/src/python/demo/isodata/",1,"Python.TexasService") 
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","NewYorkService","/irisdev/app/src/python/demo/isodata/",1,"Python.NewYorkService") 
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","SouthWestService","/irisdev/app/src/python/demo/isodata/",1,"Python.SouthWestService") 
-  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","PjmService","/irisdev/app/src/python/demo/isodata/",1,"Python.PjmService") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","PjmService","/irisdev/app/src/python/demo/isodata/",1,"Python.PjmService") 
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","MidcontinentService","/irisdev/app/src/python/demo/isodata/",1,"Python.MidcontinentService") 
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","IsoneService","/irisdev/app/src/python/demo/isodata/",1,"Python.IsoneService") 
-  zw ##class(Grongier.PEX.Utils).RegisterComponent("bp","FilterPostRoutingRule","/irisdev/app/src/python/demo/isodata/",1,"Python.FilterPostRoutingRule")
- zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","FileOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.FileOperation")
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bp","FilterPostRoutingRule","/irisdev/app/src/python/demo/isodata/",1,"Python.FilterPostRoutingRule")
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","CaliforniaOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.CaliforniaOperation") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","TexasOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.TexasOperation") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","NewYorkOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.NewYorkOperation") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","SouthWestOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.SouthWestOperation") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","PjmOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.PjmOperation") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","MidcontinentOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.MidcontinentOperation") 
+ zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","IsoneOperation","/irisdev/app/src/python/demo/isodata/",1,"Python.IsoneOperation") 
 
  set ^EnsPortal.Settings("SuperUser","LastProduction")	= "PEX.Production"
  

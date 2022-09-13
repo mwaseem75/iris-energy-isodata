@@ -38,43 +38,43 @@ XData ProductionDefinition
   <Item Name="Isodata.FilterRoutingRule" Category="" ClassName="Python.FilterPostRoutingRule" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
 
-  <Item Name="Isodata.CaliforniaOperation" Category="" ClassName="Python.FileOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  <Item Name="Isodata.CaliforniaOperation" Category="" ClassName="Python.CaliforniaOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
     <Setting Target="Adapter" Name="Charset">utf-8</Setting>
     <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
     <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
   </Item>
 
-  <Item Name="Isodata.TexasOperation" Category="" ClassName="Python.FileOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  <Item Name="Isodata.TexasOperation" Category="" ClassName="Python.TexasOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
     <Setting Target="Adapter" Name="Charset">utf-8</Setting>
     <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
     <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
   </Item>
 
-  <Item Name="Isodata.NewYorkOperation" Category="" ClassName="Python.FileOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  <Item Name="Isodata.NewYorkOperation" Category="" ClassName="Python.NewYorkOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
     <Setting Target="Adapter" Name="Charset">utf-8</Setting>
     <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
     <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
   </Item>
 
-  <Item Name="Isodata.SouthWestOperation" Category="" ClassName="Python.FileOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  <Item Name="Isodata.SouthWestOperation" Category="" ClassName="Python.SouthWestOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
     <Setting Target="Adapter" Name="Charset">utf-8</Setting>
     <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
     <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
   </Item>
 
- <Item Name="Isodata.PjmOperation" Category="" ClassName="Python.FileOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+ <Item Name="Isodata.PjmOperation" Category="" ClassName="Python.PjmOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
     <Setting Target="Adapter" Name="Charset">utf-8</Setting>
     <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
     <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
   </Item>
 
-<Item Name="Isodata.MidcontinentOperation" Category="" ClassName="Python.FileOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+<Item Name="Isodata.MidcontinentOperation" Category="" ClassName="Python.MidcontinentOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
     <Setting Target="Adapter" Name="Charset">utf-8</Setting>
     <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
     <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
   </Item>
 
-<Item Name="Isodata.IsoneOperation" Category="" ClassName="Python.FileOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+<Item Name="Isodata.IsoneOperation" Category="" ClassName="Python.IsoneOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
     <Setting Target="Adapter" Name="Charset">utf-8</Setting>
     <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
     <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
