@@ -3,7 +3,7 @@
 iris-energy-isodata app access energy data from the major Independent System Operators (ISOs) in the United States to Ensure sustainable consumption and production patterns (SDG's 16)
 
 
-Application is using [**PEX**](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=EPEX_INTRO) **iris interoperability framework** along with **embedded python**. 
+Application is using [**PEX**](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=EPEX_INTRO) **iris interoperability framework** and [**ISODATA**](https://github.com/kmax12/isodata) Python library with the help of **embedded python**. 
 
 ## Get production, demand and supply of below Independent systems operators(ISOs) 
 * California ISO (caiso)
