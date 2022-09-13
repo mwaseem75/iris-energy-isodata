@@ -26,9 +26,18 @@ class FilterPostRoutingRule(BusinessProcess):
     def on_python_message(self, request: PostMessage):
         if 'caiso'.upper() in request.post.title.upper():
             target = "Isodata.CaliforniaOperation" 
-            
-        if 'cat'.upper() in request.post.title.upper():
-            target = "Isodata.CaliforniaOperation"
+        elif 'ercot'.upper() in request.post.title.upper():
+            target = "Isodata.TexasOperation"
+        elif 'nyiso'.upper() in request.post.title.upper():
+            target = "Isodata.NewYorkOperation"
+        elif 'spp'.upper() in request.post.title.upper():
+            target = "Isodata.SouthWestOperation"
+        elif 'pjm'.upper() in request.post.title.upper():
+            target = "Isodata.PjmOperation"
+        elif 'miso'.upper() in request.post.title.upper():
+            target = "Isodata.MidcontinentOperation"    
+        elif 'isone'.upper() in request.post.title.upper():
+            target = "Isodata.IsoneOperation"                                
 
         if target is not None:
             self.send_request_sync(target,request)
