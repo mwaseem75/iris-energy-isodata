@@ -37,6 +37,11 @@ Method GetModule() As %String
 	Return ..%module
 }
 
+Method SendRequestAsync(target,request,description) As %String
+{
+	Return ""
+}
+
 Method OnInit() As %Status
 {
 	set tSC = $$$OK
@@ -118,9 +123,10 @@ Method SetPropertyValues()
 
 Method dispatchSendRequestSync(target, request, timeout, description) As %String
 {
-	set tSC = ..SendRequestSync(target,request,.objResponse,timeout,description)
-	if $$$ISERR(tSC) throw ##class(%Exception.StatusException).CreateFromStatus(tSC)
-	quit $g(objResponse)
+	//set tSC = ..SendRequestSync(target,request,.objResponse,timeout,description)
+	//if $$$ISERR(tSC) throw ##class(%Exception.StatusException).CreateFromStatus(tSC)
+	//quit $g(objResponse)
+	quit ""
 }
 
 Method dispatchSendRequestAsync(target, request, description)
