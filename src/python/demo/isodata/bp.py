@@ -27,21 +27,9 @@ class FilterPostRoutingRule(BusinessProcess):
         if 'caiso'.upper() in request.post.title.upper():
             target = "Isodata.CaliforniaOperation" 
         
-        if 'ercot'.upper() in request.post.title.upper():
-            target = "Isodata.TexasOperation"
-        
-        if 'nyiso'.upper() in request.post.title.upper():
-            target = "Isodata.NewYorkOperation"
-        
-        if 'spp'.upper() in request.post.title.upper():
-            target = "Isodata.SouthWestOperation"
-        
         if 'pjm'.upper() in request.post.title.upper():
             target = "Isodata.PjmOperation"
-        
-        if 'miso'.upper() in request.post.title.upper():
-            target = "Isodata.MidcontinentOperation"    
-        
+                
         if 'isone'.upper() in request.post.title.upper():
             target = "Isodata.IsoneOperation"                                
 

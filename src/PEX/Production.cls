@@ -11,23 +11,7 @@ XData ProductionDefinition
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
   
-  <Item Name="Isodata.TexasService" Category="" ClassName="Python.TexasService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Host" Name="%settings">limit=10</Setting>
-  </Item>
-
-  <Item Name="Isodata.NewYorkService" Category="" ClassName="Python.NewYorkService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Host" Name="%settings">limit=10</Setting>
-  </Item>
-
-  <Item Name="Isodata.SouthWestService" Category="" ClassName="Python.SouthWestService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Host" Name="%settings">limit=10</Setting>
-  </Item>
-
   <Item Name="Isodata.PjmService" Category="" ClassName="Python.PjmService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Host" Name="%settings">limit=10</Setting>
-  </Item>
-
-  <Item Name="Isodata.MidcontinentService" Category="" ClassName="Python.MidcontinentService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="%settings">limit=10</Setting>
   </Item>
 
@@ -44,35 +28,12 @@ XData ProductionDefinition
     <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
   </Item>
 
-  <Item Name="Isodata.TexasOperation" Category="" ClassName="Python.TexasOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  <Item Name="Isodata.PjmOperation" Category="" ClassName="Python.PjmOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
     <Setting Target="Adapter" Name="Charset">utf-8</Setting>
     <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
     <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
   </Item>
 
-  <Item Name="Isodata.NewYorkOperation" Category="" ClassName="Python.NewYorkOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
-    <Setting Target="Adapter" Name="Charset">utf-8</Setting>
-    <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
-    <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
-  </Item>
-
-  <Item Name="Isodata.SouthWestOperation" Category="" ClassName="Python.SouthWestOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
-    <Setting Target="Adapter" Name="Charset">utf-8</Setting>
-    <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
-    <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
-  </Item>
-
- <Item Name="Isodata.PjmOperation" Category="" ClassName="Python.PjmOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
-    <Setting Target="Adapter" Name="Charset">utf-8</Setting>
-    <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
-    <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
-  </Item>
-
-<Item Name="Isodata.MidcontinentOperation" Category="" ClassName="Python.MidcontinentOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
-    <Setting Target="Adapter" Name="Charset">utf-8</Setting>
-    <Setting Target="Adapter" Name="FilePath">/irisdev/app/output/</Setting>
-    <Setting Target="Host" Name="%settings">path=/irisdev/app/output/</Setting>
-  </Item>
 
 <Item Name="Isodata.IsoneOperation" Category="" ClassName="Python.IsoneOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
     <Setting Target="Adapter" Name="Charset">utf-8</Setting>

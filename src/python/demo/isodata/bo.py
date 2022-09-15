@@ -18,60 +18,7 @@ class CaliforniaOperation(BusinessOperation):
         write_to_file(request)
         
   
-
-class TexasOperation(BusinessOperation):
-    """
-    This operation receive a PostMessage and write down in the right company
-    .txt all the important information and the time of the operation
-    """
-    def on_init(self):
-        if hasattr(self,'path'):
-            os.chdir(self.path)
-
-    #write message to the file
-    def on_message(self, request):
-        write_to_file(request)
-
-class NewYorkOperation(BusinessOperation):
-    """
-    This operation receive a PostMessage and write down in the right company
-    .txt all the important information and the time of the operation
-    """
-    def on_init(self):
-        if hasattr(self,'path'):
-            os.chdir(self.path)
-
-    #write message to the file
-    def on_message(self, request):
-        write_to_file(request)
-
-class SouthWestOperation(BusinessOperation):
-    """
-    This operation receive a PostMessage and write down in the right company
-    .txt all the important information and the time of the operation
-    """
-    def on_init(self):
-        if hasattr(self,'path'):
-            os.chdir(self.path)
-
-   #write message to the file
-    def on_message(self, request):
-        write_to_file(request)
-
 class PjmOperation(BusinessOperation):
-    """
-    This operation receive a PostMessage and write down in the right company
-    .txt all the important information and the time of the operation
-    """
-    def on_init(self):
-        if hasattr(self,'path'):
-            os.chdir(self.path)
-
-    #write message to the file
-    def on_message(self, request):
-        write_to_file(request)
-
-class MidcontinentOperation(BusinessOperation):
     """
     This operation receive a PostMessage and write down in the right company
     .txt all the important information and the time of the operation
