@@ -7,11 +7,7 @@ Application is using [**PEX**](https://docs.intersystems.com/irislatest/csp/docb
 
 ## Get production, demand and supply of below Independent systems operators(ISOs) 
 * California ISO (caiso)
-* Electric Reliability Council of Texas (ercot)
-* New York ISO (nyiso)
-* Southwest Power Pool (spp)
 * PJM (pjm)
-* Midcontinent ISO (miso)
 * ISO New England (isone)
 
 ## Get today total production of following energies
@@ -56,8 +52,8 @@ Navigate to production
 http://localhost:52795/csp/irisapp/EnsPortal.ProductionConfig.zen?PRODUCTION=PEX.Production  by using SuperUser | SYS
 
 Start the production
-![image](https://user-images.githubusercontent.com/18219467/189573043-49dd6f92-dc29-4bc8-9298-f9fd34359c83.png)
-Production contains 7 Business Services, 1 Business Process and 7 Business Operations.
+![image](https://user-images.githubusercontent.com/18219467/190370238-ac152029-5ec0-4c79-8b59-239d3c81fadd.png)
+Production contains 3 Business Services, 1 Business Process and 3 Business Operations.
 
 Business Service fetch data from ISOdata and pass to business process which is sending message to business process based on the title. 
 
