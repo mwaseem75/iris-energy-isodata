@@ -68,7 +68,7 @@ The following message passed to operation contains today total production of Nat
 ## Online Demo
 For online demo navigate to 
 http://irisisodata.demo.community.intersystems.com/csp/irisapp/EnsPortal.ProductionConfig.zen?PRODUCTION=PEX.Production by using SuperUser | SYS
-![image](https://user-images.githubusercontent.com/18219467/189644037-81ddd698-afef-4b81-9b26-8b287ee09003.png)
+![image](https://user-images.githubusercontent.com/18219467/190374380-548eb1bc-8593-47c5-9b22-e58d9ee1de3a.png)
 
 
 ## Special Thanks to:
