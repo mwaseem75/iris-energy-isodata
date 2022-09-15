@@ -54,8 +54,7 @@ ClassMethod DeleteComponentProxy(pClassname As %String = "") As %Status
 	
 	Quit:(""=pClassname) $$$ERROR($$$EnsErrGeneral,"Remote class name must be specified.")
 	
-	Try {
-		
+	Try {		
 		If '##class(%Dictionary.ClassDefinition).%ExistsId(pClassname) {
 			Set tSC = $$$ERROR($$$EnsErrGeneral,$$$FormatText("No proxy class defined for remote class '%1'.",pClassname))
 			Quit

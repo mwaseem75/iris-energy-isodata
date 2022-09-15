@@ -7,6 +7,7 @@
  do $System.OBJ.LoadDir("/irisdev/app/src/PEX","ck","*.cls",1)
 
  //Register Python code
+ // 
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","CaliforniaService","/irisdev/app/src/python/demo/isodata/",1,"Python.CaliforniaService") 
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","TexasService","/irisdev/app/src/python/demo/isodata/",1,"Python.TexasService") 
  zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","NewYorkService","/irisdev/app/src/python/demo/isodata/",1,"Python.NewYorkService") 

@@ -83,7 +83,6 @@ class TexasService(BusinessService):
         except Exception as err: 
             self.log_error(err.__str__())
             raise err
-
         return None 
 
 #Service to get data by using isodata library
