@@ -24,10 +24,7 @@ class CaliforniaService(BusinessService):
         return "Ens.InboundAdapter"
 
     def on_init(self):
-        
-        if not hasattr(self,'feed'):
-            self.feed = "/new/"
-        
+                 
         if not hasattr(self,'limit'):
             raise TypeError('no limit field')
 
@@ -104,9 +101,6 @@ class PjmService(BusinessService):
 
     def on_init(self):
         
-        if not hasattr(self,'feed'):
-            self.feed = "/new/"
-        
         if not hasattr(self,'limit'):
             raise TypeError('no limit field')
 
@@ -182,10 +176,7 @@ class IsoneService(BusinessService):
         return "Ens.InboundAdapter"
 
     def on_init(self):
-        
-        if not hasattr(self,'feed'):
-            self.feed = "/new/"
-        
+                  
         if not hasattr(self,'limit'):
             raise TypeError('no limit field')
 
