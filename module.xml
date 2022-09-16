@@ -12,7 +12,7 @@
       <FileCopy Name="src/python/demo/isodata" Target="${libdir}python/demo/isodata"/>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Directory="cls" Name="Isodata.PKG"/>
+      <Resource Directory="cls" Name="Grongier.PKG"/>
     </Module>
   </Document>
 </Export>
