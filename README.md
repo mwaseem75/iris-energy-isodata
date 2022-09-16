@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/18219467/189523406-1da330b7-080b-4a06-95f5-701cbe1e21d3.png)
 
-iris-energy-isodata app access energy data from the major Independent System Operators (ISOs) in the United States to Ensure sustainable consumption and production patterns (SDG's 16)
+iris-energy-isodata app access energy data from the major Independent System Operators (ISOs) in the United States to Ensure sustainable consumption and production patterns (SDG's 12)
 
 
 Application is using [**PEX**](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=EPEX_INTRO) **iris interoperability framework** and [**ISODATA**](https://pypi.org/project/isodata/0.5.0/) Python library with the help of **embedded python**. 
