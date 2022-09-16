@@ -3,7 +3,7 @@
   <Document name="iris-energy-isodata.ZPM">
     <Module>
       <Name>iris-energy-isodata</Name>
-      <Version>1.0.3</Version>
+      <Version>1.0.4</Version>
       <Description>Access energy data of Major ISOs in the United States</Description>
       <Keywords>python</Keywords>
       <SystemRequirements Version=">=2021.2" Interoperability="enabled" />
