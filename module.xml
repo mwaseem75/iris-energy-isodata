@@ -7,8 +7,8 @@
       <Description>Access energy data of Major ISOs in the United States</Description>
       <Keywords>python</Keywords>
       <SystemRequirements Version=">=2021.2" Interoperability="enabled" />
-      <FileCopy Name="src/python/grongier/pex" Target="${mgrdir}python/grongier/pex/"/>
-      <FileCopy Name="src/python/grongier/dacite" Target="${mgrdir}python/grongier/dacite/"/>
+      <FileCopy Name="src/python/grongier/pex" Target="${libdir}python/grongier/pex/"/>
+      <FileCopy Name="src/python/grongier/dacite" Target="${libdir}python/grongier/dacite/"/>
       <FileCopy Name="src/python/demo/isodata" Target="${mgrdir}python/"/>       
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
