@@ -7,7 +7,6 @@ Application is using [**PEX**](https://docs.intersystems.com/irislatest/csp/docb
 
 ## Get production, demand and supply of below Independent systems operators(ISOs) 
 * California ISO (caiso)
-* PJM (pjm)
 * ISO New England (isone)
 
 ## Get today total production of following energies
@@ -53,7 +52,7 @@ http://localhost:52795/csp/irisapp/EnsPortal.ProductionConfig.zen?PRODUCTION=PEX
 
 Start the production
 ![image](https://user-images.githubusercontent.com/18219467/190370238-ac152029-5ec0-4c79-8b59-239d3c81fadd.png)
-Production contains 3 Business Services, 1 Business Process and 3 Business Operations.
+Production contains 2 Business Services, 1 Business Process and 2 Business Operations.
 
 Business Service fetch data from ISOdata and pass to business process which is sending message to business process based on the title. 
 
