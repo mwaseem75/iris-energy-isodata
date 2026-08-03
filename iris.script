@@ -2,9 +2,16 @@
  set sc = ##class(App.Installer).setup() 
 
  zn "IRISAPP"
- zpm "load /irisdev/app/ -v" 
- zpm "install sslclient"
+
+ set libdir = ##class(%File).ManagerDirectory()_"python/"
+ do ##class(%File).CreateDirectoryChain(libdir_"grongier/pex")
+ do ##class(%File).CreateDirectoryChain(libdir_"grongier/dacite")
+ set rc = $ZF(-1, "cp -r /irisdev/app/src/python/grongier/pex/. "_libdir_"grongier/pex/")
+ set rc = $ZF(-1, "cp -r /irisdev/app/src/python/grongier/dacite/. "_libdir_"grongier/dacite/")
+ set rc = $ZF(-1, "cp -r /irisdev/app/src/python/demo/isodata/. "_libdir)
+
  do $System.OBJ.LoadDir("/irisdev/app/src/PEX","ck","*.cls",1)
+ do $System.OBJ.LoadDir("/irisdev/app/src/Grongier/PEX","ck","*.cls",1)
 
  //Register Python code
  // 
